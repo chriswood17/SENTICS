@@ -1,0 +1,46 @@
+<html lang="eng"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VDR_input</title>
+	<link href="CSS/VDR_stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<body>
+	<div class="form">
+		<form id="VDR-form" action="/input_data.html" method="post" target="_blank">
+			
+			<div class="form-item link">
+				<label for="link">link/url:</label>
+				<input type="text" id="link" name="link">
+			</div>
+			
+			<div class="form-item file">
+				<label for="avatar">upload image (png/jpeg)</label>
+				<input type="file" id="file" name="file" accept="image/png, image/jpeg, pdf">
+			</div>
+	
+			<div class="form-item written">
+				<label for="written description">written text / image description:</label>
+				<textarea id="written" name="written"></textarea>
+			</div>
+	
+			<div class="form-item stroke">
+				<label for="gravity symbol">select a corresponding gravity shape:</label>
+					<div class="check-wrap">
+				<div class="check-item"><input type="checkbox" name='strokeA' id="strokeA"/><label for="strokeA"></label></div>
+				<div class="check-item"><input type="checkbox" name='strokeB' id="strokeB"/><label for="strokeB"></label></div>
+				<div class="check-item"><input type="checkbox" name='strokeC' id="strokeC"/><label for="strokeC"></label></div>
+				<div class="check-item"><input type="checkbox" name='strokeD' id="strokeD"/><label for="strokeD"></label></div>
+					</div>
+			</div>
+	
+			<div class="form-item button">
+  				<button type="submit">submit</button>
+			</div>
+	
+			</form>
+	</div>
+
+</body>
