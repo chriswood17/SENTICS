@@ -159,12 +159,6 @@ textarea {
 	caret-color: #0F0;
 }
 
-input:focus, 
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #00f;
-}
-
 
 /* STROKE SELECT
 ------------------------------------*/
