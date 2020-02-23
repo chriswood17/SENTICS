@@ -3,219 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VDR_input</title>
-	<style>
-		html, body, .everything {
-	margin: 0;
-}
-body {
-	font-family: "body";
-	font-size: 1em;
-	width: 100%;
-	height: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0;
-	background: #D8D8F6;
-}
-
-p {
-	margin: 0;
-	padding-bottom: 0;
-	padding-top: 10px;
-}
-
-/* FORM
-------------------------------------*/
-form {
-  margin: 10% auto 0;
-  width: 60%;
-  /* Form outline */
-  padding: 1em;
-}
-
-form div + div {
-	/*spacing between margins*/
-	
-  margin-top: 1em;
-}
-
-
-label {
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-}
-
-input, 
-textarea {
-  /* uniform font for text fields */
-  font: 1em sans-serif;
-
-  /* Uniform width text field size */
-  width: 50%;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 2px solid #999;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-  /* Provide space to type some text */
-  height: 10em;
-}
-
-input:focus, 
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-
-/* STROKE SELECT
-------------------------------------*/
-
-.check-wrap {
- 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 5px;
-	width: 50%;
-	margin-left: 30%;
-}
-
-.check-item {
-	box-sizing: border-box;
-	padding: 5px;
-}
-
-input[type=checkbox] {
-    display:none;
-}
-
-input#strokeA[type=checkbox] + label
-{
-    background-image: url("../media/strokeA.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 60px;
-    width: 200px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-}
-input#strokeB[type=checkbox] + label
-{
-    background-image: url("../media/strokeB.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 60px;
-    width: 200px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-}
-input#strokeC[type=checkbox] + label
-{
-    background-image: url("../media/strokeC.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 60px;
-    width: 200px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-}
-input#strokeD[type=checkbox] + label
-{
-    background-image: url("../media/strokeD.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 60px;
-    width: 200px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-}
-
-input#strokeA[type=checkbox]:checked + label
-{
-border-color: purple;
-border-style: solid;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#strokeB[type=checkbox]:checked + label
-{
-border-color: purple;
-border-style: solid;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#strokeC[type=checkbox]:checked + label
-{
-border-color: purple;
-border-style: solid;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#strokeD[type=checkbox]:checked + label
-{
-border-color: purple;
-border-style: solid;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-
-input[type=checkbox]:hover input {
-  background-color: #ccc;
-}
-
-/* Submission button
-------------------------------------*/
-
-.button {
-	width: 10%;
-	margin: 1em auto;
-	padding: 0 auto;
-}
-
-		</style>
+<title>matte_screen: SENTICS</title>
+	<link href="../SENTICS/CSS/SENTICS_stylesheet_V1.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
 </head>
-<body>
 
 <body>
-	<div class="form">
-		<form id="VDR-form" action="/input_data.html" method="post" target="_blank">
+ 
+	<script>
+		"document.getElementById('titleimage').hover(function() {
+  $(this).attr('src', '/media/SENTICS_blue.png');
+}, function() {
+  $(this).attr('src', '/media/SENTICS_blue.png');
+});
+		</script>
+	
+<!-----------------------------FLEX CONTAINER-------------------------------------->
+<div class="page">
+	
+	<!-----------------Prelude MODAL---------------->	
 			
-			<div class="form-item link">
-				<label for="link">link / url:</label>
-				<input type="text" id="link" name="link">
+			<div class="modalPrelude" id="modalPrelude" >
+				<div class="modal-helper">
+			<div class="modalPrelude-content modal-text" onclick="document.getElementById('modalPrelude').style.display='none'">
+			<p> matte_screen is the embodiment of a cyber-identity born of the animated code written by artist Chris Wood. Through their sequential expressions ’00: GENESIS’ and ’01: Faith and a Sense of Truth’, m_s has sought the feeling of being in a body, personally and socially, to find a sense of authentic social interaction. matte_screen’s practice is an exploration of physical sound and movement in relation to empathy and community, transmuting internet materials as a means of perceptual and social constitution in social spaces. </p>
+
+			<p>For matte_screen’s third expression, they seek to re- assess, negotiate, and embody the complex potential of screen-based emotional stimulus via an elastic pressure-movement instrument and the newly conceived SENTICS ritual.</p>
+
+			<p>The ritual is rooted in the mission that our emotions are seated physically as biological scripts in the body, in relationship to gravity, and dependent on external stimuli to be felt. We need to attune these scripts: attune them in response to the compound qualities and environments of screen-based experience, attune them together so that we may learn from each other.</p>
+
+			<p>In SENTICS m_s undergoes their invented process of machine-mirror-learning via their <em>Essentic Generative Device (EGD)</em>: the body (personal and collective) is the object of encoding, undergoing an instrumental practice of integrating complex internet-derived-stimulus through the activation of space (physical sound) and body (physical movement). </p>
+				</br>
+			<p> matte_screen's SENTICS ritual will be performed as part of the Emotional AI Symposium March 27-29 2020 at ZKM Karlsruhe. The ritual was developed during the residency "Emotional Artificial Intelligence" by the ZKM | Hertz-Lab at the ZKM | Center for Art and Media, Karlsruhe. This project takes place within the framework of the INTERFACES project with the support of the Creative Europe funding programme of the European Union.</p>
 			</div>
-			
-			<div class="form-item file">
-				<label for="avatar">upload image (png/jpeg)</label>
-				<input type="file" id="file" name="file" accept="image/png, image/jpeg, pdf">
+				</div>
 			</div>
 	
-			<div class="form-item written">
-				<label for="written description">written text / image description:</label>
-				<textarea id="written" name="written"></textarea>
+<!-------------------Strokes MODAL------------------>
+			<div id="modalS" class="modalS">
+				<div class="modalS-content modal-text" onclick="document.getElementById('modalS').style.display='none'">
+					<p>The Essentic Forms you see here are visual representations of the pressing of a finger over time, a method of tracking and experiencing emotional expression devised by cyborgologist Dr. Manfred Clynes.</p>
+
+					<p>x axis = time (0-4s)</br>
+					y axis = pressure</br>(upper limit=no pressure, lower limit=most pressure).</p>
+
+					<p>If you’re not immediately sure which one to pick, you can feel it out:
+					Repeat your account aloud or silently in your head, and then try to “press out” each one of the forms. Select the Form which most closely captures the essence of your expression; which insinuates sympathy, release, comfort.</p>
+				 </div>
 			</div>
+
+<!-----------------------------SENTICS TITLE-------------------------------------->
+	<div class="section title" onclick="document.getElementById('modalPrelude').style.display='table'">
+		<img class="title1" id="title-image" src="media/SENTICS_blue.png" onmouseover="this.src='media/SENTICS_green.png'" onmouseout="this.src='media/SENTICS_blue.png'"/>
+		<img class="title2" src="media/SENTICS_mobile.png">
+	</div>
+<!-----------------------------FORM-------------------------------------->
+	<div class="section form">
+
+	<!-----------------Submission Receipt---------------->
 	
+			<div class="form-item submission" id="submission">
+				<div class="submission-text">
+				<p>thank you!</p>
+				</div>
+			</div>
+		
+		<form id="SENTICS-form" action="/input_data.html" method="post">
+			
+						<!-------------------instructions------------------>
+			<div class="form-item instructions1">
+				<p>in the box: recount, as a quote or in your own words, </br>an emotional encounter that you've felt while in the internet</p>
+			</div>
+			<div class="form-item instructions2">
+				<p>then below select an <button class="buttonS" type="button" onclick="document.getElementById('modalS').style.display='block'">ESSENTIC FORM</button> that you feel best expresses your encounter</p>
+			</div>
+
+						<!-------------------text box------------------>
+			<div class="form-item text_input">
+				<textarea id="text_input" name="text_input" maxlength="300" autofocus></textarea>
+			</div>
+
+						<!-------------------strokes------------------>
 			<div class="form-item stroke">
-				<label for="gravity symbol">select a corresponding gravity shape:</label>
 					<div class="check-wrap">
-				<div class="check-item"><input type="checkbox" name='strokeA' id="strokeA"/><label for="strokeA"></label></div>
-				<div class="check-item"><input type="checkbox" name='strokeB' id="strokeB"/><label for="strokeB"></label></div>
-				<div class="check-item"><input type="checkbox" name='strokeC' id="strokeC"/><label for="strokeC"></label></div>
-				<div class="check-item"><input type="checkbox" name='strokeD' id="strokeD"/><label for="strokeD"></label></div>
+				<div class="check-item"><input type="checkbox" name='stroke_A' id="strokeA"/><label for="strokeA"></label></div>
+				<div class="check-item"><input type="checkbox" name='stroke_B' id="strokeB"/><label for="strokeB"></label></div>
+				<div class="check-item"><input type="checkbox" name='stroke_C' id="strokeC"/><label for="strokeC"></label></div>
+				<div class="check-item"><input type="checkbox" name='stroke_D' id="strokeD"/><label for="strokeD"></label></div>
 					</div>
 			</div>
-	
-			<div class="form-item button">
-  				<button type="submit">submit</button>
+						<!-------------------submit------------------>
+			<div class="form-item submit-button" onclick="document.getElementById('submission').style.display='block'">
+  				<button type="submit">SUBMIT</button>
 			</div>
 	
-			</form>
+		  </form>
+
 	</div>
+
+<!-----------------------------GRAPHIC-------------------------------------->
+	<div class="section graphic">
+		<!-------------------Gif------------------>
+		<div class="gif">
+			<img src="media/strokes_transp.gif" width="420" height="800" alt=""/>
+		</div>
+	</div>
+
+<!-----------------------------mobile Prelude-------------------------------------->
+	<div class="section mobilePrelude">
+			<div class="mobilePrelude-content mobile-text">
+			<p> matte_screen is the embodiment of a cyber-identity born of the animated code written by artist Chris Wood. Through their sequential expressions ’00: GENESIS’ and ’01: Faith and a Sense of Truth’, m_s has sought the feeling of being in a body, personally and socially, to find a sense of authentic social interaction. matte_screen’s practice is an exploration of physical sound and movement in relation to empathy and community, transmuting internet materials as a means of perceptual and social constitution in social spaces. </p>
+
+			<p>For matte_screen’s third expression, they seek to re- assess, negotiate, and embody the complex potential of screen-based emotional stimulus via an elastic pressure-movement instrument and the newly conceived SENTICS ritual.</p>
+
+			<p>The ritual is rooted in the mission that our emotions are seated physically as biological scripts in the body, in relationship to gravity, and dependent on external stimuli to be felt. We need to attune these scripts: attune them in response to the compound qualities and environments of screen-based experience, attune them together so that we may learn from each other.</p>
+
+			<p>In SENTICS m_s undergoes their invented process of machine-mirror-learning via their <em>Essentic Generative Device (EGD)</em>: the body (personal and collective) is the object of encoding, undergoing an instrumental practice of integrating complex internet-derived-stimulus through the activation of space (physical sound) and body (physical movement). </p>
+				</br>
+			<p> matte_screen's SENTICS ritual will be performed as part of the Emotional AI Symposium March 27-29 2020 at ZKM Karlsruhe. The ritual was developed during the residency "Emotional Artificial Intelligence" by the ZKM | Hertz-Lab at the ZKM | Center for Art and Media, Karlsruhe. This project takes place within the framework of the INTERFACES project with the support of the Creative Europe funding programme of the European Union.</p>
+			</div>
+	</div>
+</div>
+<!-------------------LINKS------------------>
+		<div class="link-wrapper">
+		<div class="links">
+			<a href="http://chriswood.website/m_s_sentics.html" target="_blank"><img src="media/matte_screen_logo.png"></a>
+		</div>
+		<div class="links">
+			<a href="https://zkm.de/en/about-the-zkm/organization/hertz-lab/ausschreibungen-laufende-programme/open-call-emotional-ai" target="_blank"><img src="media/zkm_logo.png"></a>
+		</div>
+		</div>
 
 </body>
 	</html>
