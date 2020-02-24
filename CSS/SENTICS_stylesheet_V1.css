@@ -370,7 +370,7 @@ button:hover {
 ------------------------------------*/
 
 .submission {
-	display: none;
+	display: block;
 	height: 100%;
 	width: 50%;
 	position: fixed;
